@@ -86,8 +86,8 @@ gomc_control.write_gomc_control_file(charmm, 'in_GEMC_NVT.conf', 'GEMC_NVT', 100
                                                            "SwapFreq": 0.20,
                                                            "RegrowthFreq": 0.20,
                                                            "CrankShaftFreq": 0.09,
-                                                           "VolFreq": 0.00,
-                                                           "MultiParticleFreq": 0.01,
+                                                           "VolFreq": 0.01,
+                                                           "MultiParticleFreq": 0.00,
                                                            }
                                     )
 
