@@ -6,10 +6,7 @@ import mbuild.formats.gomc_conf_writer as gomc_control
 
 
 # set the force field and create the all-atom (AA) pentane molecule via a smiles string
-FF =  Forcefield(name='oplsaa', debug=True)
-
 pentane = mb.load('CCCCC', smiles=True)
-FF.apply(pentane)
 pentane.name = 'PEN'
 
 
@@ -42,8 +39,7 @@ charmm.write_pdb()
 
 # create the GOMC control file
 gomc_control.write_gomc_control_file(charmm, 'in_GEMC_NVT.conf',  'GEMC_NVT', 100, 300,
-                                     input_variables_dict={"Pressure": 10,
-                                                           "Potential" : 'SWITCH',
+                                     input_variables_dict={"Potential" : 'SWITCH',
                                                            "Rswitch" : 10,
                                                            "Rcut": 12,
                                                            "RcutLow": 1,

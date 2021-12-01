@@ -29,7 +29,7 @@ hexane =mb.load('../common/hexane.mol2')
 hexane.energy_minimize(forcefield = forcefield_files_hexane , steps=10**4)
 hexane.name = 'HEX'
 
-forcefield_files_water = '../common/spce.xml'
+forcefield_files_water = '../common/spce_trappe.xml'
 water = mb.load('O', smiles=True)
 water.energy_minimize(forcefield = forcefield_files_water , steps=10**4)
 water.name = 'H2O'

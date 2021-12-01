@@ -15,7 +15,7 @@ import mbuild.formats.charmm_writer as mf_charmm
 import mbuild.formats.gomc_conf_writer as gomc_control
 
 
-FF_file_water = '../common/spce.xml'
+FF_file_water = '../common/spce_oplsaa.xml'
 water = mb.load('O', smiles=True)
 water.name = 'H2O'
 water.energy_minimize(forcefield=FF_file_water, steps=10**5)
