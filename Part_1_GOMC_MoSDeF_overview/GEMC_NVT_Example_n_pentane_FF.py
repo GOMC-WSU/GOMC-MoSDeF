@@ -6,10 +6,7 @@ import mbuild.formats.gomc_conf_writer as gomc_control
 
 
 # set the force field and create the all-atom (AA) pentane molecule via a smiles string
-FF =  Forcefield(name='oplsaa', debug=True)
-
 pentane = mb.load('CCCCC', smiles=True)
-FF.apply(pentane)
 pentane.name = 'PEN'
 
 
