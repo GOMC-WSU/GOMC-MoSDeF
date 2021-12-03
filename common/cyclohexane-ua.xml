@@ -3,7 +3,7 @@
   <Type name="CH2-cyc6_sp3" class="CH2" element="_CH2" mass="14.02700" def="[_CH2;X2]([_CH2])[_CH2]" desc="Secondary sp3 cyclic 6 carbon ring CH2, united atom" doi="doi.org/10.1021/jp302975c"/>
  </AtomTypes>
  <HarmonicBondForce>
-  <Bond class1="CH2" class2="CH2" length="0.154" k="224262.4"/>
+  <Bond class1="CH2" class2="CH2" length="0.1540" k="502416.0"/>
  </HarmonicBondForce>
  <HarmonicAngleForce>
   <Angle class1="CH2" class2="CH2" class3="CH2" angle="1.98967534727354" k="519.653913634575"/>
