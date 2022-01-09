@@ -15,7 +15,7 @@ import mbuild.formats.charmm_writer as mf_charmm
 import mbuild.formats.gomc_conf_writer as gomc_control
 
 
-FF_file_water = '../common/spce.xml'
+FF_file_water = '../common/spce_oplsaa.xml'
 water = mb.load('O', smiles=True)
 water.name = 'H2O'
 water.energy_minimize(forcefield=FF_file_water, steps=10**5)
@@ -86,8 +86,8 @@ gomc_control.write_gomc_control_file(charmm, 'in_GEMC_NVT.conf', 'GEMC_NVT', 100
                                                            "SwapFreq": 0.20,
                                                            "RegrowthFreq": 0.20,
                                                            "CrankShaftFreq": 0.09,
-                                                           "VolFreq": 0.00,
-                                                           "MultiParticleFreq": 0.01,
+                                                           "VolFreq": 0.01,
+                                                           "MultiParticleFreq": 0.00,
                                                            }
                                     )
 
